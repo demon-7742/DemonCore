@@ -1,0 +1,6 @@
+[Module]
+Name=DemonCore
+Version=1
+Files=DemonCore.lua
+Dependencies=minionlib
+Enabled=1
