@@ -2,6 +2,10 @@ DemonCore = {}
 
 DemonCore.version = "1.0"
 
+local LuaPath = GetLuaModsPath()
+local ModulePath = LuaPath .. [[DemonCore\]]
+local ImageFolder = ModulePath .. [[Images\]]
+
 DemonCore.GUI = {
     open = false,
     visible = true,
@@ -165,8 +169,9 @@ function DemonCore.log(string)
 end
 
 function DemonCore.Init()
+	local MainIcon = ImageFolder .. [[DemonIcon.png]]
     DemonCore.log("Initializing DemonCore v" .. tostring(DemonCore.version))
-    ml_gui.ui_mgr:AddMember({ id = "FFXIVMINION##MENU_DemonCore", name = "DemonCore", onClick = function() DemonCore.GUI.open = not DemonCore.GUI.open end, tooltip = "test"},"FFXIVMINION##MENU_HEADER")
+    ml_gui.ui_mgr:AddMember({ id = "FFXIVMINION##MENU_DemonCore", name = "DemonCore", onClick = function() DemonCore.GUI.open = not DemonCore.GUI.open end,  texture = MainIcon},"FFXIVMINION##MENU_HEADER")
 	DemonCore.LoadSettings()
 end
 
