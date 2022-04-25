@@ -1,6 +1,6 @@
 DemonCore = {}
 
-DemonCore.version = "1.0"
+DemonCore.version = "1.1"
 
 local LuaPath = GetLuaModsPath()
 local ModulePath = LuaPath .. [[DemonCore\]]
@@ -55,16 +55,8 @@ DemonCore.Settings = {
 				menu = "Esuna",
 				tooltip = "Enable/Disable Esuna",
 			},
-			Kardia = {
-				index = 4,
-				name = "Kardia",
-				visible = true,
-				bool = true,
-				menu = "Kardia",
-				tooltip = "Enable/Disable Kardia",
-			},
 			Kerachole = {
-				index = 5,
+				index = 4,
 				name = "Kerachole",
 				visible = true,
 				bool = true,
@@ -72,7 +64,7 @@ DemonCore.Settings = {
 				tooltip = "Enable/Disable Kerachole",
 			},
 			Preshield = {
-				index = 6,
+				index = 5,
 				name = "Preshield",
 				visible = true,
 				bool = true,
